@@ -19,7 +19,7 @@ const services = [
     },
     {
         name: 'Facials',
-        file: '/assets/images/new/home/services/Facial.webp',
+        file: '/assets/images/new/home/services/facial.webp',
         direction: 'bottom-left'
     },
     {
