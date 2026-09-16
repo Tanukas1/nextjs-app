@@ -13,55 +13,55 @@ const bodyServices = [
     },
     {
         title: "Full Body Massage",
-        desc: "A relaxing session with premium oils to relieve tension and refresh you.",
+        desc: "A tailored massage that eases tension and leaves you fully relaxed.",
         img: "https://www.knksalon.in/assets-admin/upload/category_service/659687248c690.webp",
     },
 ];
 
 const bodyMenu = {
-    "Body Massage": {
+    "Foot & Head Massage": {
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
-                <path d="M6 4c0 3 2 4 2 7s-2 4-2 7M12 4c0 3 2 4 2 7s-2 4-2 7M18 4c0 3 2 4 2 7s-2 4-2 7" />
+                <path d="M12 3a5 5 0 0 0-5 5c0 3 2 4 2 7a3 3 0 0 0 6 0c0-3 2-4 2-7a5 5 0 0 0-5-5Z" />
             </svg>
         ),
         items: [
-            "Swedish massage (60/90 min)",
-            "Potli massage (60/90 min)",
-            "Epsom Salt therapy (60/90 min)",
-            "Deep tissue (60/90 min)",
+            "Foot Massage — Duration 30 Minutes",
+            "Foot Massage — Duration 45 Minutes",
+            "Head Massage — Duration 30 Minutes",
+            "Head Massage — With wash and blow dry",
         ],
+    },
+    Body: {
+        icon: (
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <circle cx="12" cy="5" r="2" />
+                <path d="M12 7v6M8 11l4 2 4-2M9 21l3-8 3 8" />
+            </svg>
+        ),
+        items: ["Steam bath — 25 minutes", "Full body scrub"],
     },
     "Body Polish": {
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
-                <circle cx="12" cy="12" r="7" />
-                <path d="M12 8v4l3 2" />
+                <path d="M4 12c2-5 6-8 8-8s6 3 8 8-6 8-8 8-10-3-8-8Z" />
             </svg>
         ),
         items: ["Regular", "Alga", "Gluta"],
     },
-    "Foot & Head": {
+    "Body Massage": {
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
-                <path d="M8 3a4 4 0 0 0-4 4c0 3 2 4 2 8a3 3 0 0 0 6 0V8a5 5 0 0 0-4-5Z" />
-                <path d="M16 4v6M16 13v7" />
+                <path d="M4 17c3-6 5-10 8-10s5 4 8 10" />
+                <path d="M4 17h16" />
             </svg>
         ),
         items: [
-            "Foot massage — 30 minutes",
-            "Foot massage — 45 minutes",
-            "Head massage — 30 minutes",
-            "Head massage with wash & blow dry",
+            "Swedish massage (60/90)",
+            "Potli massage (60/90)",
+            "Epsom Salt therapy (60/90)",
+            "Deep tissue (60/90)",
         ],
-    },
-    "Steam & Scrub": {
-        icon: (
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
-                <path d="M6 20c0-3 2-3 2-6s-2-3-2-6M12 20c0-3 2-3 2-6s-2-3-2-6M18 20c0-3 2-3 2-6s-2-3-2-6" />
-            </svg>
-        ),
-        items: ["Steam bath — 25 minutes", "Full body scrub"],
     },
 };
 
@@ -211,14 +211,14 @@ export default function BodyService() {
                     <div className="relative z-10 max-w-[600px]">
                         <Eyebrow>Body</Eyebrow>
                         <h1 className="mt-6 font-display text-[64px] font-medium leading-[0.8] tracking-[-0.05em] text-ink sm:text-[78px] md:text-[92px] lg:text-[88px] xl:text-[105px]">
-                            Relax,
+                            Relax
                             <br />
-                            <span className="italic text-gold">and be renewed.</span>
+                            <span className="italic text-gold">&amp; treat.</span>
                         </h1>
                         <GoldDivider />
                         <p className="mt-7 max-w-[500px] font-sans text-[13px] leading-[1.9] text-muted sm:text-[14px]">
                             Massage, polishing or a full spa ritual — every body treatment
-                            designed for deep relaxation and lasting rejuvenation.
+                            designed for real relaxation and renewal.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4">
                             <a
@@ -257,7 +257,7 @@ export default function BodyService() {
                         <GoldDivider center />
                     </div>
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
                         {bodyServices.map((service, i) => (
                             <BodyCard key={service.title} service={service} index={i} />
                         ))}
