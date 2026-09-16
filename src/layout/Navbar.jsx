@@ -5,11 +5,11 @@ import Link from "next/link";
 
 // Only Nails page is live right now — rest point to '#' until their pages are built.
 const SERVICES_MENU = [
-    { id: 'nails', label: 'Nails', href: '/services/nails' },
-    { id: 'hair', label: 'Hair', href: '/services/nails' },
-    { id: 'beauty', label: 'Beauty', href: '/services/nails' },
-    { id: 'facial', label: 'Facial', href: '/services/nails' },
-    { id: 'body', label: 'Body', href: '/services/nails' },
+    { id: 'nails', label: 'Nails', href: '/services/nail-art' },
+    { id: 'hair', label: 'Hair', href: '/services/hair' },
+    { id: 'beauty', label: 'Beauty', href: '/services/beauty' },
+    { id: 'facial', label: 'Facial', href: '/services/facial' },
+    { id: 'body', label: 'Body', href: '/services/body' },
 ];
 
 function Navbar() {
@@ -32,7 +32,7 @@ function Navbar() {
                 }`}
         >
             <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 pt-4 pb-2 md:px-10">
-                <a href="#top" className="leading-none">
+                <a href="/" className="leading-none">
                     <img
                         className="w-32"
                         src="/assets/images/new/logo.png"

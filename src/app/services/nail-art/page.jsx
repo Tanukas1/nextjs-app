@@ -1,7 +1,7 @@
 import Layout from '../../../layout/Layout'
 import NailsService from '../../../components/serviceComponents/NailsService'
 
-export default function NailsServicePage() {
+export default function Page() {
     return (
         <>
             <Layout>
