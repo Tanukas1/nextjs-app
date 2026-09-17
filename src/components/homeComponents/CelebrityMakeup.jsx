@@ -19,7 +19,7 @@ function CelebrityMakeup() {
         <>
             <section
                 id="celebrity-makeup"
-                className="relative overflow-hidden bg-[#29231f] py-20 sm:py-24 lg:py-32"
+                className="relative overflow-hidden bg-[#3b2419] py-20 sm:py-24 lg:py-32"
             >
                 {/* Background decorative typography */}
                 <div className="pointer-events-none absolute -right-10 top-8 select-none font-['Cormorant_Garamond'] text-[150px] font-medium leading-none text-white/[0.025] sm:text-[220px] lg:text-[300px]">
@@ -161,36 +161,6 @@ function CelebrityMakeup() {
                                 {/* Swiper pagination dots */}
                                 <div className="celebrity-swiper-pagination absolute bottom-8 right-8 z-20 flex items-center gap-2" />
                             </div>
-                            {/* =================================================
-         FLOATING GOLD CARD
-    ================================================== */}
-                            <div className="absolute bottom-6 left-0 z-20 w-[180px] border border-[#c49a4d]/50 bg-[#302923]/95 p-5 backdrop-blur-md sm:w-[205px] sm:p-6 lg:bottom-10">
-                                <span className="font-['Cormorant_Garamond'] text-[38px] leading-none text-[#c49a4d]">
-                                    ✦
-                                </span>
-                                <p className="mt-3 font-['Inter'] text-[8px] font-medium uppercase tracking-[0.2em] text-white">
-                                    Signature
-                                    <br />
-                                    Celebrity Glam
-                                </p>
-                                <div className="mt-4 h-px w-full bg-white/10" />
-                                <p className="mt-3 font-['Inter'] text-[7px] uppercase tracking-[0.15em] text-[#8e8379]">
-                                    Polished · Sculpted · Radiant
-                                </p>
-                            </div>
-                            {/* =================================================
-         ROTATING BADGE
-    ================================================== */}
-                            <div className="celebrity-badge absolute right-3 top-8 z-30 flex h-24 w-24 items-center justify-center rounded-full border border-[#c49a4d]/60 bg-[#29231f]/80 backdrop-blur-sm sm:right-8 sm:top-5 sm:h-28 sm:w-28">
-                                <div className="absolute inset-2 rounded-full border border-dashed border-[#c49a4d]/50" />
-                                <span className="font-['Cormorant_Garamond'] text-center text-[14px] italic leading-[1] text-[#d5b97d]">
-                                    Beauty
-                                    <br />
-                                    in
-                                    <br />
-                                    motion
-                                </span>
-                            </div>
                             {/* Vertical editorial text */}
                             <div className="absolute bottom-24 right-[-30px] hidden rotate-90 lg:block">
                                 <span className="font-['Inter'] text-[7px] uppercase tracking-[0.45em] text-white/30">
@@ -235,7 +205,7 @@ function CelebrityMakeup() {
             <style
                 dangerouslySetInnerHTML={{
                     __html:
-                        "\n\n    /* -----------------------------------------\n       CINEMATIC IMAGE MOVEMENT\n    ----------------------------------------- */\n\n    .celebrity-editorial-image {\n\n      transform: scale(1.04);\n\n      animation:\n              celebrityImageZoom 14s ease-in-out infinite alternate;\n\n      will-change: transform;\n\n      backface-visibility: hidden;\n\n      -webkit-backface-visibility: hidden;\n    }\n\n\n    @keyframes celebrityImageZoom {\n\n      0% {\n        transform:\n                scale(1.04)\n                translate3d(0, 0, 0);\n      }\n\n      50% {\n        transform:\n                scale(1.09)\n                translate3d(-0.6%, -0.5%, 0);\n      }\n\n      100% {\n        transform:\n                scale(1.04)\n                translate3d(0.5%, 0.3%, 0);\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       GOLD BADGE ROTATION\n    ----------------------------------------- */\n\n    .celebrity-badge {\n\n      animation:\n              celebrityBadgeRotate 18s linear infinite;\n\n    }\n\n\n    @keyframes celebrityBadgeRotate {\n\n      from {\n        transform: rotate(0deg);\n      }\n\n      to {\n        transform: rotate(360deg);\n      }\n\n    }\n\n\n    /* Keep badge text readable */\n\n    .celebrity-badge > span {\n\n      animation:\n              celebrityBadgeText 18s linear infinite;\n\n    }\n\n\n    @keyframes celebrityBadgeText {\n\n      from {\n        transform: rotate(0deg);\n      }\n\n      to {\n        transform: rotate(-360deg);\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       MARQUEE\n    ----------------------------------------- */\n\n    .celebrity-marquee {\n\n      animation:\n              celebrityMarquee 28s linear infinite;\n\n    }\n\n\n    @keyframes celebrityMarquee {\n\n      from {\n        transform: translateX(0);\n      }\n\n      to {\n        transform: translateX(-35%);\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       IMAGE HOVER\n    ----------------------------------------- */\n\n    .celebrity-image-frame {\n\n      transition:\n              transform 700ms cubic-bezier(.2,.8,.2,1);\n\n    }\n\n\n    .celebrity-image-frame:hover {\n\n      transform:\n              translateY(-8px);\n\n    }\n\n\n    /* -----------------------------------------\n       ACCESSIBILITY\n    ----------------------------------------- */\n\n    @media (prefers-reduced-motion: reduce) {\n\n      .celebrity-editorial-image,\n      .celebrity-badge,\n      .celebrity-badge > span,\n      .celebrity-marquee {\n\n        animation: none;\n\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       MOBILE\n    ----------------------------------------- */\n\n    @media (max-width: 639px) {\n\n      .celebrity-image-frame {\n\n        width: 92%;\n        height: 520px;\n\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       SWIPER PAGINATION (gold dots)\n    ----------------------------------------- */\n\n    .celebrity-swiper-wrap .swiper {\n\n      width: 100%;\n      height: 100%;\n\n    }\n\n    .celebrity-swiper-pagination .swiper-pagination-bullet {\n\n      width: 6px;\n      height: 6px;\n      border-radius: 9999px;\n      background: rgba(255, 255, 255, 0.4);\n      opacity: 1;\n      margin: 0 !important;\n      transition: width 500ms, background 500ms;\n      cursor: pointer;\n    }\n\n    .celebrity-swiper-pagination .swiper-pagination-bullet-active {\n\n      width: 24px;\n      background: #c49a4d;\n\n    }\n\n  "
+                        "\n\n    /* -----------------------------------------\n       CINEMATIC IMAGE MOVEMENT\n    ----------------------------------------- */\n\n    .celebrity-editorial-image {\n\n      transform: scale(1.04);\n\n      animation:\n              celebrityImageZoom 14s ease-in-out infinite alternate;\n\n      will-change: transform;\n\n      backface-visibility: hidden;\n\n      -webkit-backface-visibility: hidden;\n    }\n\n\n    @keyframes celebrityImageZoom {\n\n      0% {\n        transform:\n                scale(1.04)\n                translate3d(0, 0, 0);\n      }\n\n      50% {\n        transform:\n                scale(1.09)\n                translate3d(-0.6%, -0.5%, 0);\n      }\n\n      100% {\n        transform:\n                scale(1.04)\n                translate3d(0.5%, 0.3%, 0);\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       MARQUEE\n    ----------------------------------------- */\n\n    .celebrity-marquee {\n\n      animation:\n              celebrityMarquee 28s linear infinite;\n\n    }\n\n\n    @keyframes celebrityMarquee {\n\n      from {\n        transform: translateX(0);\n      }\n\n      to {\n        transform: translateX(-35%);\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       IMAGE HOVER\n    ----------------------------------------- */\n\n    .celebrity-image-frame {\n\n      transition:\n              transform 700ms cubic-bezier(.2,.8,.2,1);\n\n    }\n\n\n    .celebrity-image-frame:hover {\n\n      transform:\n              translateY(-8px);\n\n    }\n\n\n    /* -----------------------------------------\n       ACCESSIBILITY\n    ----------------------------------------- */\n\n    @media (prefers-reduced-motion: reduce) {\n\n      .celebrity-editorial-image,\n      .celebrity-marquee {\n\n        animation: none;\n\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       MOBILE\n    ----------------------------------------- */\n\n    @media (max-width: 639px) {\n\n      .celebrity-image-frame {\n\n        width: 92%;\n        height: 520px;\n\n      }\n\n    }\n\n\n    /* -----------------------------------------\n       SWIPER PAGINATION (gold dots)\n    ----------------------------------------- */\n\n    .celebrity-swiper-wrap .swiper {\n\n      width: 100%;\n      height: 100%;\n\n    }\n\n    .celebrity-swiper-pagination .swiper-pagination-bullet {\n\n      width: 6px;\n      height: 6px;\n      border-radius: 9999px;\n      background: rgba(255, 255, 255, 0.4);\n      opacity: 1;\n      margin: 0 !important;\n      transition: width 500ms, background 500ms;\n      cursor: pointer;\n    }\n\n    .celebrity-swiper-pagination .swiper-pagination-bullet-active {\n\n      width: 24px;\n      background: #c49a4d;\n\n    }\n\n  "
                 }}
             />
             <style

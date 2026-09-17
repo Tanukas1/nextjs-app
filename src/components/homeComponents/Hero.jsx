@@ -63,12 +63,12 @@ function Hero() {
                 <div className="flex h-full flex-col justify-between">
                   <div>
                     {/* Label */}
-                    <div className="mb-3 flex items-center gap-3">
+                    {/* <div className="mb-3 flex items-center gap-3">
                       <span className="h-px w-6 bg-[#b58b59]" />
                       <span className="font-['Inter'] text-[8px] font-medium uppercase tracking-[0.3em] text-[#92745a]">
                         The Concierge
                       </span>
-                    </div>
+                    </div> */}
                     {/* Heading */}
                     <h2 className="font-['Cormorant_Garamond'] text-[32px] font-medium leading-[0.88] tracking-[-0.03em] text-[#29231f] sm:text-[35px]">
                       Reserve your

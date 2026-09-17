@@ -96,7 +96,7 @@ function Makeup() {
         <>
             <section
                 id="makeup"
-                className="relative overflow-hidden bg-[#f3ede5] py-20 sm:py-12 lg:py-24"
+                className="relative overflow-hidden bg-[#f3ede5] pb-20 pt-8 sm:pb-12 sm:pt-6 lg:pb-24 lg:pt-10"
             >
                 {/* Background Decorative Text */}
                 <div className="pointer-events-none absolute -bottom-10 right-[-30px] select-none font-['Cormorant_Garamond'] text-[180px] leading-none text-[#d8c9b7]/40 sm:text-[240px] lg:text-[320px]">
@@ -106,41 +106,10 @@ function Makeup() {
 
                     <div className="mx-auto max-w-[1280px]">
 
-                        {/* =================================================
-                            HEADER — heading left, description right (parallel)
-                        ================================================== */}
-                        <div className="grid gap-10 text-left lg:grid-cols-[1.2fr_1fr] lg:items-center lg:gap-16">
-                            <div>
-                                {/* Eyebrow */}
-                                <p className="font-['Inter'] text-[9px] font-medium uppercase tracking-[0.35em] text-[#a17b5a]">
-                                    Makeup / Artistry
-                                </p>
-                                {/* Heading */}
-                                <h2 className="mt-5 font-['Cormorant_Garamond'] text-[56px] font-medium leading-[0.9] tracking-[-0.03em] text-[#29231f] sm:text-[68px] md:text-[80px] lg:text-[84px]">
-                                    Your face.
-                                    <br />
-                                    <span className="italic text-[#b58a52]">Your canvas.</span>
-                                </h2>
-                                {/* Gold divider */}
-                                <div className="mt-7 flex items-center gap-3">
-                                    <span className="h-[2px] w-16 bg-[#b58a52]" />
-                                    <span className="h-1.5 w-1.5 rounded-full bg-[#b58a52]" />
-                                    <span className="h-px w-10 bg-[#d0bda4]" />
-                                </div>
-                            </div>
-                            {/* Description */}
-                            <p className="border-l border-[#d7cab9] pl-8 font-['Inter'] text-[13px] leading-[1.9] text-[#71665c] sm:text-[14px]">
-                                Makeup should enhance what makes you uniquely beautiful. Our
-                                artists create refined, personalised looks for brides,
-                                celebrations, photoshoots and every occasion where you want to
-                                feel your absolute best.
-                            </p>
-                        </div>
-
                         {/* =====================================================
                             REMAINING CONTENT (centered)
                         ====================================================== */}
-                        <div className="mx-auto mt-14 max-w-[1280px] text-center">
+                        <div className="mx-auto mt-2 max-w-[1280px] text-center">
                             {/* =================================================
                                 SERVICES — photo tile gallery
                             ================================================== */}

@@ -3,11 +3,11 @@
 import React, { useState, useEffect } from 'react';
 
 const galleryImages = [
-    { src: '/assets/images/new/home/bridal/1.webp', alt: 'KNK Salon interior' },
-    { src: '/assets/images/new/home/bridal/2.webp', alt: 'Hair styling at KNK' },
-    { src: '/assets/images/new/home/bridal/3.webp', alt: 'Makeup artistry at KNK' },
-    { src: '/assets/images/new/home/bridal/4.webp', alt: 'Bridal look at KNK' },
-    { src: '/assets/images/new/home/bridal/5.webp', alt: 'Nail art at KNK' },
+    { src: 'assets/images/new/home/bridal/1.webp', alt: 'KNK Salon interior' },
+    { src: 'assets/images/new/home/bridal/2.webp', alt: 'Hair styling at KNK' },
+    { src: 'assets/images/new/home/bridal/3.webp', alt: 'Makeup artistry at KNK' },
+    { src: 'assets/images/new/home/bridal/4.webp', alt: 'Bridal look at KNK' },
+    { src: 'assets/images/new/home/bridal/5.webp', alt: 'Nail art at KNK' },
 ];
 
 function LuxuryBooking() {
