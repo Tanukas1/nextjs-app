@@ -5,24 +5,6 @@ import { Eyebrow, GoldDivider } from "./ServiceUI";
 import ProcessSteps from "./ProcessSteps";
 import ServicesCTA from "./ServicesCTA";
 
-const facialServices = [
-    {
-        title: "Premium Facial",
-        desc: "Customised skincare with art and precision for real, lasting radiance.",
-        img: "https://www.knksalon.in/assets-admin/upload/category_service/65968ba7343aa.webp",
-    },
-    {
-        title: "Face Cleanup",
-        desc: "Gentle exfoliation and deep cleansing for a brighter, fresher complexion.",
-        img: "https://www.knksalon.in/assets-admin/upload/category_service/659689cbeaaf1.webp",
-    },
-    {
-        title: "Hydra Facial",
-        desc: "Cleanse, exfoliate, extract and hydrate for smoother, glowing skin.",
-        img: "https://www.knksalon.in/assets-admin/upload/category_service/659689374d63a.webp",
-    },
-];
-
 const facialMenu = {
     Masks: {
         icon: (
@@ -53,41 +35,6 @@ const facialMenu = {
         items: ["O3", "Kanpeki", "Casmara", "Thalgo"],
     },
 };
-
-function FacialCard({ service, index }) {
-    return (
-        <div className="group relative aspect-[3/4] overflow-hidden rounded-sm border-t-2 border-gold shadow-sm transition-shadow duration-500 hover:shadow-luxe">
-            <img
-                src={service.img}
-                alt={service.title}
-                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-            />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent" />
-
-            {/* index number, top-right */}
-            <span className="absolute right-4 top-4 font-display text-xs italic text-cream/70">
-                {String(index + 1).padStart(2, "0")}
-            </span>
-
-            <div className="absolute inset-x-0 bottom-0 p-6">
-                <span className="h-px w-8 bg-gold block mb-3 transition-all duration-500 group-hover:w-14" />
-                <h3 className="font-display text-2xl italic font-medium leading-tight text-cream">
-                    {service.title}
-                </h3>
-                <p className="mt-2 max-w-[26ch] font-sans text-[12px] leading-relaxed text-cream/75">
-                    {service.desc}
-                </p>
-                <a
-                    href="tel:+919559321711"
-                    className="mt-4 inline-flex max-h-0 items-center gap-2 overflow-hidden font-sans text-[10px] tracking-[0.2em] uppercase text-gold opacity-0 transition-all duration-300 group-hover:max-h-6 group-hover:opacity-100"
-                >
-                    Book This
-                    <span aria-hidden="true">&rarr;</span>
-                </a>
-            </div>
-        </div>
-    );
-}
 
 function TreatmentMenu() {
     const categories = Object.keys(facialMenu);
@@ -244,12 +191,6 @@ export default function FacialService() {
                             Our facial <span className="italic text-gold">services.</span>
                         </h2>
                         <GoldDivider center />
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                        {facialServices.map((service, i) => (
-                            <FacialCard key={service.title} service={service} index={i} />
-                        ))}
                     </div>
 
                     <TreatmentMenu />

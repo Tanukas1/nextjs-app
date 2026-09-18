@@ -13,8 +13,8 @@ function Aesthetics() {
                 <div className="pointer-events-none absolute -right-40 top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-[#c9a875]/10 blur-3xl" />
                 <div className="mx-auto grid max-w-[1280px] items-center gap-14 px-6 sm:px-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:px-14 xl:px-20">
                     {/* =====================================================
-     LEFT — CONTENT
-====================================================== */}
+                        LEFT — CONTENT
+                    ====================================================== */}
                     <div className="relative z-10 max-w-[620px]">
                         {/* Decorative Background Word */}
                         <span className="pointer-events-none absolute -left-12 top-1/2 hidden -translate-y-1/2 select-none font-['Cormorant_Garamond'] text-[170px] leading-none text-[#dfd0be]/70 xl:block">
@@ -50,8 +50,8 @@ function Aesthetics() {
                                 feels beautifully yours.
                             </p>
                             {/* =================================================
-         AESTHETIC SERVICES
-    ================================================== */}
+                                AESTHETIC SERVICES
+                            ================================================== */}
                             <div className="mt-9 flex max-w-[600px] flex-wrap gap-2.5">
                                 <a
                                     href="#facial"
@@ -91,8 +91,8 @@ function Aesthetics() {
                                 </a>
                             </div>
                             {/* =================================================
-         BENEFITS
-    ================================================== */}
+                                BENEFITS
+                            ================================================== */}
                             <div className="mt-9 grid grid-cols-1 gap-4 border-t border-[#d5c8b9] pt-6 sm:grid-cols-3">
                                 <div>
                                     <span className="font-['Cormorant_Garamond'] text-[25px] italic text-[#a47d59]">
@@ -120,8 +120,8 @@ function Aesthetics() {
                                 </div>
                             </div>
                             {/* =================================================
-         CTA
-    ================================================== */}
+                                CTA
+                            ================================================== */}
                             <div className="mt-11 flex flex-wrap items-center gap-7">
                                 <a
                                     href="#book"
@@ -142,8 +142,8 @@ function Aesthetics() {
                         </div>
                     </div>
                     {/* =====================================================
-     RIGHT — ARCH / WINDOW IMAGE
-====================================================== */}
+                        RIGHT — ARCH / WINDOW IMAGE
+                    ====================================================== */}
                     <div className="relative flex justify-center lg:justify-end">
                         {/* Decorative Frame */}
                         <div className="absolute -bottom-5 -right-5 hidden h-[calc(100%-15px)] w-[calc(100%-15px)] max-w-[500px] border border-[#bfa989]/40 lg:block" />
@@ -151,8 +151,8 @@ function Aesthetics() {
                         <div className="group relative z-10 w-full max-w-[500px] overflow-hidden  rounded-b-[3px] border border-[#d4c2aa] bg-[#e3d4c1] p-[5px] shadow-[0_25px_65px_rgba(65,48,34,0.14)]">
                             <div className="relative h-[560px] overflow-hidden  rounded-b-[2px] sm:h-[640px] lg:h-[680px]">
                                 {/* Image */}
-                                <img
-                                    src="assets/images/new/aesthetics-adv.webp"
+                                <img 
+                                    src="assets/images/new/home/services/advanced-aesthetics.webp"
                                     alt="Luxury aesthetic and skin treatment"
                                     loading="lazy"
                                     className="aesthetic-image h-full w-full object-cover object-center"
